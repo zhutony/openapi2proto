@@ -15,4 +15,5 @@
 # openapi/external.go:
 * Resolve external refs and return interface{} which is the type yaml/json decoder returns
 * YAML serializers are really, really, really annoying in that it decodes maps into map[interface{}]interface{} instead of map[string]interface{}. Keys behind the interface{} could be strings, ints, etc, so we convert them into map types that we can actually handle, namely map[string]interface{}: turn int16, int64, bool, float64... into strings.
+* map[interface{}]interace{} -- reflect APIs (slow) --> map[string]interface{}
 

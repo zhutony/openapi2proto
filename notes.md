@@ -10,7 +10,7 @@
 
 # openapi/openapi.go
 * LoadFile loads an OpenAPI spec from a file, or a remote HTTP(s) location. This function also resolves any external references.
-* 
+* resovled external references --> interface{} --> Re-encode (Encode + Unmarshal, inline all $refs) --> openapi.Spec
 
 # openapi/external.go:
 * Resolve external refs and return interface{} which is the type yaml/json decoder returns

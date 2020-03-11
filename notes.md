@@ -19,4 +19,11 @@
 * map[interface{}]interace{} -- reflect APIs (slow) --> map[string]interface{}
 
 # compiler.Compile
-
+* Compile takes an OpenAPI spec and compiles it into a protobuf.Package
+* compileGlobalOptions
+* compileDefinitions
+* compileParameters
+* compileResponses
+* protobuf.Resolve
+* compileExtension
+* compilePaths

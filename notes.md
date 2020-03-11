@@ -1,3 +1,5 @@
+# why not use Python?
+
 # cmd/openapi2proto/main.go
 * build options for encoder and compiler
 * openapi2proto.Transpile
